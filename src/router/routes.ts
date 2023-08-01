@@ -7,8 +7,7 @@ const routes: RouteRecordRaw[] = [
     children: [
       {
         path: '',
-        component: () => import('components/MyTable.vue'),
-        props: { showDeleteCol: false, showUpdateCol: false },
+        component: () => import('components/ConnInventory.vue'),
       },
     ],
   },
