@@ -17,7 +17,7 @@ import { defineComponent, ref } from 'vue';
 export default defineComponent({
   name: 'IndexPage',
   components: { ExampleComponent },
-  setup () {
+  setup() {
     const todos = ref<Todo[]>([
       {
         id: 1,
@@ -41,9 +41,9 @@ export default defineComponent({
       }
     ]);
     const meta = ref<Meta>({
-      totalCount: 1200
+      totalCount: 1200,
     });
     return { todos, meta };
-  }
+  },
 });
 </script>

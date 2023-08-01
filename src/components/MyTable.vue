@@ -57,16 +57,7 @@ const rowClickEventHandler = () => {
   console.log('Done emitting rowClickEvent.');
 };
 
-const visibleColumns = ref([
-  'calories',
-  'desc',
-  'fat',
-  'carbs',
-  'protein',
-  'sodium',
-  'calcium',
-  'iron',
-]);
+const visibleColumns = ref(['id', 'acna', 'sb']);
 
-const fullScreenMode = ref(props.fullScreenMode)
+const fullScreenMode = ref(props.fullScreenMode);
 </script>
