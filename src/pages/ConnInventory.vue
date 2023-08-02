@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import MyTable from './MyTable.vue';
+import MyTable from '../components/MyTable.vue';
 
 const bbsRowClickListener = () => {
   console.log('bbsRowClickListener called.');
