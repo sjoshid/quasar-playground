@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lhh Lpr lff">
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>Oculus</q-toolbar-title>
@@ -13,6 +13,10 @@
         />
       </q-toolbar>
     </q-header>
+
+    <q-footer>
+        Company Info
+    </q-footer>
 
     <q-page-container>
       <slot name="content"></slot>

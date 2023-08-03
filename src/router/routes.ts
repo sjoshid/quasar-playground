@@ -1,42 +1,33 @@
 import { RouteRecordRaw } from 'vue-router';
 
 const routes: RouteRecordRaw[] = [
-  {
-    path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      {
-        path: '',
-        component: () => import('components/ConnInventory.vue'),
-      }
-    ],
-  },
+  // User paths.
   {
     path: '/',
     component: () => import('layouts/UserLayout.vue'),
-    children: [
+    children: [      
+      {
+        path: '',
+        component: () => import('pages/HotspotPage.vue'),
+      },
       {
         path: 'metrics',
         component: () => import('pages/MetricsPage.vue'),
       },
       {
-        path: 'hotspot',
-        component: () => import('pages/HotspotPage.vue'),
-      },
-      {
         path: 'inventory',
-        component: () => import('pages/ConnInventory.vue'),
+        component: () => import('pages/ConnInventoryPage.vue'),
       },
     ],
   },
 
   // Admin paths.
   {
-    path: '/admin',
+    path: '/',
     component: () => import('layouts/AdminLayout.vue'),
     children: [
       {
-        path: '',
+        path: 'admin',
         component: () => import('pages/SamplePage.vue'),
       },
     ],
