@@ -5,11 +5,36 @@
         <q-layout view="lhh Lpr lff">
           <q-header elevated>
             <q-toolbar style="min-height: 30px">
-              <q-space></q-space>
+              <div class="row no-wrap justify-start items-start content-start">
+                <div class="q-pa-xs">
+                  <q-btn-dropdown color="green" label="Metrics">
+                    <q-list>
+                      <q-item clickable v-close-popup>
+                        <q-item-section>
+                          <q-item-label>Hotspot</q-item-label>
+                        </q-item-section>
+                      </q-item>
+                      <q-item clickable v-close-popup>
+                        <q-item-section>
+                          <q-item-label>Time series</q-item-label>
+                        </q-item-section>
+                      </q-item>
+                    </q-list>
+                  </q-btn-dropdown>
+                </div>
 
-              <q-btn stretch flat label="User"></q-btn>
-              <q-separator dark vertical></q-separator>
-              <q-btn stretch flat label="Admin"></q-btn>
+                <div class="q-pa-xs">
+                  <q-btn-dropdown color="green" label="Inventory">
+                    <q-list>
+                      <q-item clickable v-close-popup>
+                        <q-item-section>
+                          <q-item-label>Connection Inventory</q-item-label>
+                        </q-item-section>
+                      </q-item>
+                    </q-list>
+                  </q-btn-dropdown>
+                </div>
+              </div>
             </q-toolbar>
           </q-header>
           <q-page-container>
