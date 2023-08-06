@@ -54,9 +54,7 @@
                     dense
                     :autofocus="true"
                   >
-                    <template #append>
-                      <q-icon name="search" />
-                    </template>
+                    <template #append> <q-icon name="search" />¬ </template>
                   </q-input>
                 </div>
               </q-toolbar>
