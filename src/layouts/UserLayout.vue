@@ -35,10 +35,24 @@
                     </q-list>
                   </q-btn-dropdown>
                 </div>
+                <div class="q-pa-xs">
+                  <q-input
+                    v-model="search"
+                    debounce="500"
+                    filled
+                    placeholder="Search"
+                    dense
+                    :autofocus="true"
+                  >
+                    <template #append>
+                      <q-icon name="search" />
+                    </template>
+                  </q-input>
+                </div>
               </q-toolbar>
               <q-toolbar class="col-4">
                 <q-space></q-space>
-                <q-tabs shrink stretch>
+                <q-tabs shrink stretch indicator-color="green">
                   <q-tab
                     name="tab2"
                     icon="admin_panel_settings"
@@ -59,4 +73,7 @@
 
 <script setup lang="ts">
 import RootLayout from '../layouts/RootLayout.vue';
+import { ref } from 'vue';
+
+const search = ref('');
 </script>
